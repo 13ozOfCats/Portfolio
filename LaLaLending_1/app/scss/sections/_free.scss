@@ -1,0 +1,42 @@
+.section-free{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: linear-gradient(to right, #fe985b, #fe4fa7);
+  color: #ffffff;
+  text-align: center;
+  &__title{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 26px;
+  }
+  &__description{
+    @include font-montserrat;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto 40px;
+  }
+  &__button{
+    padding-top: 22px;
+    a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #464646;
+    padding: 16px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ffffff;
+    user-select: none;
+    transition: .5s;
+    transition-property: color;
+    &:hover{
+      color: black;
+    }
+    &:active{
+      box-shadow: 0 0 3px black;
+    }
+
+    }
+  }
+}
