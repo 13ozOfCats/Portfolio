@@ -1,0 +1,206 @@
+.calc {
+  font-family: SF Pro Display;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 40px;
+  background-color: #F6FCFC;
+  height: 500px;
+  position: relative;
+  &__title {
+    font-size: 30px;
+    line-height: 125%;
+    font-weight: 700;
+  }
+  &__hiddentitle{
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #76767A;
+  }
+  &__subtitle {
+    display: flex;
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 500;
+    padding-top: 2px;
+
+    &-number {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 37px;
+      height: 37px;
+      font-size: 22px;
+      line-height: 125%;
+      color: #FFFFFF;
+      background-color: #15A94E;
+      border-radius: 20px;
+    }
+  }
+  &_frame__title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 125%;
+    font-weight: 700;
+  }
+  &_frame__subtitle{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 125%;
+    color: #000000;
+  }
+  &__textinput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  &__textinput-big{
+    padding:5px 10px 0;
+    height: 55px;
+    width: 100%;
+    margin: 25px auto;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #76767A;
+    border-radius: 3px;
+  }
+  &__textinput-small{
+    padding:5px 10px ;
+    margin: 0 auto;
+    width: 320px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #76767A;
+    border-radius: 3px;
+    & + &{
+      margin-top: 10px;
+    }
+  }
+  &__radiobuttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__buttons {
+    margin-top: 85px;
+    button {
+      width: 164px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 150%;
+      border-radius: 3px;
+      border: 1px solid #15A94E;
+      font-weight: 500;
+    }
+    &-next{
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      background: #15A94E;
+      &:active{
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+    }
+    &-prev{
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      background-color: #F6FCFC;
+      &:active{
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+.calc__progress{
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  justify-content: space-around;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  &_item{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.calc__progress_item5{
+  transition: 1s;
+  margin-top: 20px;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9DE;
+  border-radius: 100%;
+  z-index: 20;
+}
+.calc__progress_item1,
+.calc__progress_item2,
+.calc__progress_item3,
+.calc__progress_item4{
+  transition: 1s;
+  margin-top: 20px;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9DE;
+  border-radius: 100%;
+  z-index: 2;
+}
+.notdone {
+  &:after {
+    transition: 1s;
+    position: absolute;
+    content: "";
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 150px;
+    opacity: 0.2;
+    border: 3px solid #15A94E;
+    z-index: 1;
+  }
+}
+.done{
+  &:after{
+    transition: 1s;
+    position: absolute;
+    content: "";
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 150px;
+    opacity: 1;
+    border: 3px solid #15A94E;
+    z-index: 1;
+  }
+}
+.calc__progress_item1{
+  background: #15A94E;
+  border: 1px solid #D9D9DE;
+  &:after{
+    opacity: 1;
+  }
+}

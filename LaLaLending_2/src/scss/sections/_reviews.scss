@@ -1,0 +1,44 @@
+.reviews{
+  font-family: SF Pro Display;
+  background: #F6FCFC;
+  padding-top: 80px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 50px;
+  &__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 125%;
+    color: #000000;
+  }
+  &__items{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    &_item{
+      padding-right: 5px;
+      margin-bottom: 35px;
+      max-width: 360px;
+      &-title{
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 125%;
+        color: #000000;
+        font-weight: 600;
+      }
+      &-text{
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 150%;
+        color: #20211F;
+        font-weight: 500;
+      }
+      &-subtitle{
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #76767A;
+      }
+    }
+  }
+}

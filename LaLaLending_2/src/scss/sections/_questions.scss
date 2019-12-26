@@ -1,0 +1,38 @@
+.questions{
+  font-family: SF Pro Display;
+  background: #ffffff;
+  padding-top: 80px;
+  padding-right: 10px;
+  padding-left: 16px;
+  &__title{
+    font-size: 30px;
+    line-height: 125%;
+    font-weight: 700;
+  }
+  &__subtitle{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #20211F;
+  }
+  &__button{
+    position: relative;
+    margin: 40px 0;
+    button {
+      width: 255px;
+      height: 51px;
+      background: #15A94E;
+      border: 1px solid #15A94E;
+      border-radius: 3px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+      &:active{
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  &__img{
+    margin-top: 20px;
+  }
+}

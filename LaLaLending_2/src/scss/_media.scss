@@ -1,0 +1,255 @@
+@media (min-width: 768px) {
+  .header__popup2{
+    margin: 50px auto;
+    text-align: center;
+    width: 375px;
+    height: 500px;
+    border: 2px solid #76767A;
+  }
+  .scroll__bar{
+    margin: 25px auto;
+  }
+  .consultation{
+    &__title {
+      text-align: center;
+    }
+    &__subtitle{
+      text-align: center;
+    }
+    &__form{
+      right: 10%;
+      top: 365px;
+    }
+    &__sale{
+      margin-top: 200px;
+    flex-direction: row;
+    }
+  }
+  .selection{
+    text-align: center;
+    &__icon1, &__icon2{
+      display: block;
+    }
+    &__subtitle{
+      justify-content: center;
+    }
+  }
+  .selection__popup{
+    width: 1000px;
+    margin: 0 auto;
+    &_subtitle{
+      text-align: left;
+      margin-left: 100px;
+    }
+    &_buy{
+      justify-content: space-around;
+    }
+    &_props{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  .news{
+    &__items{
+      &_item {
+        padding-right: 30px;
+      }
+    }
+  }
+  .calc{
+    text-align: center;
+    &__subtitle{
+      justify-content: center;
+    }
+    &__bar{
+      margin: 25px auto;
+    }
+    &__textinput-big{
+      width: 600px;
+    }
+    &__radiobuttons{
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__textinput{
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__textinput-small{
+      margin: 0 10px;
+    }
+    &__textinput-small+&__textinput-small{
+      margin-top: 0;
+    }
+    &__buttons {
+      &-next{
+        bottom: 25px;
+        right: 25px;
+      }
+      &-prev{
+        bottom: 25px;
+        left: 25px;
+      }
+    }
+  }
+  .why {
+    &__reason {
+      flex-direction: row;
+      flex-wrap: wrap;
+      &_item{
+        padding-right: 30px;
+      }
+    }
+  }
+  .reviews{
+    text-align: center;
+    &__items{
+      &_item{
+        margin: 0 auto 35px;
+      }
+    }
+  }
+  .questions{
+    text-align: center;
+  }
+  .contacts{
+    flex-direction: row;
+    &__info{
+      order: -1;
+    }
+    &__map{
+      height: 535px;
+    }
+  }
+  .why {
+    &__reason {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &_item{
+        padding-right: 30px;
+      }
+    }
+  }
+  .questions{
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .header{
+    &__menu{
+      display: none;
+    }
+    &__logo{
+    margin: 0 10px ;
+    }
+    &__links{
+      display: block;
+    }
+  }
+  .consultation{
+    &__image{
+      img{
+        width: 60%;
+      }
+    }
+    &__sale{
+      margin-top: 50px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__time{
+      margin-right: 30px;
+    }
+  }
+  .selection {
+    &__icon1 {
+      left: 25%;
+    }
+
+    &__icon2 {
+      right: 20%;
+    }
+  }
+  .selection__popup {
+    &_subtitle {
+      margin-left: 150px;
+    }
+  }
+  .how{
+    background-image: url("../img/how__bg.svg");
+    &__steps{
+      flex-direction: row;
+      justify-content: space-around;
+      &_item{
+        width: 200px;
+      }
+    }
+  }
+  .calc{
+    &__hiddentitle{
+      display: block;
+    }
+    &_frame__title{
+      margin-top: 100px;
+    }
+  }
+  .why {
+    &__img {
+      margin-top: 100px;
+      margin-right: 200px;
+
+      img {
+        width: 150%;
+      }
+    }
+  }
+  .reviews{
+    &__items{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+}
+@media (min-width: 1366px) {
+  .header{
+    &__phone{
+      display: none;
+    }
+    &__cellphone{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  .calc{
+    height: 100%;
+    &_frame__title{
+      margin-top: 200px;
+    }
+    &__window{
+      position: relative;
+      padding: 60px 100px;
+      background: #FFFFFF;
+      width: 1100px;
+      height: 700px;
+      margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+    }
+    .selection__popup{
+      &_props{
+        &-item{
+
+        }
+      }
+    }
+    &__progress{
+      display: flex;
+    }
+  }
+}
+

@@ -1,0 +1,54 @@
+.why{
+  font-family: SF Pro Display;
+  background: #F5F5F7;
+  padding-top: 80px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 75px;
+  &__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 125%;
+  }
+  &__subtitle{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #76767A;
+  }
+  &__reason{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    &_item{
+      max-width: 330px;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      &-img{
+        width: 80px;
+        height: 80px;
+        padding: 18px;
+        background: #F4FBFB;
+        border-radius: 8px;
+      }
+      &-title{
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 125%;
+      }
+      &-text{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #20211F;
+      }
+    }
+  }
+  &__img{
+    margin-top: 35px;
+    margin-left: -16px;
+
+  }
+}
