@@ -1,0 +1,466 @@
+@media (max-width: 400px) {
+  .connect{
+    background-size: 230%;
+  }
+}
+@media (max-width: 767px) {
+  .logo{
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+  .menu{
+    display: flex;
+  }
+  .menu__links{
+    display: none;
+  }
+
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu__links {
+    display: flex;
+  }
+  .menu__link {
+    margin: 0 30px;
+  }
+  .faq {
+    padding: 0 50px;
+
+    &__txt {
+      margin-top: 40px;
+      margin-left: 10%;
+      width: 40%;
+    }
+  }
+  .calc {
+    margin-left: 50px;
+  }
+  .connect {
+    margin-bottom: 100px;
+    &__subtitle {
+      padding: 0 150px 20px ;
+    }
+  }
+  .flex {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1023px) {
+  .header{
+    padding: 20px;
+  }
+  .logo{
+    img{
+    width: 70%;
+    }
+  }
+  .menu__button{
+    display: none;
+  }
+  input[type=range] {
+    width: 328px;
+  }
+  input[type=text] {
+    width: 328px;
+    height: 56px;
+  }
+  .inputs__numbers{
+    width: 328px;
+  }
+  .footer{
+    background-size: 35%, 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .header{
+    padding: 20px;
+  }
+  .buttons__btn-white{
+    display: flex;
+  }
+  .risk__title{
+    font-size: 36px;
+    line-height: 120%;
+    padding: 80px 300px;
+  }
+  .title{
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .menu__button{
+    display: flex;
+    button{
+      width: 180px;
+      height: 56px;
+    }
+  }
+  .description {
+    position: relative;
+    &__text {
+
+      position: absolute;
+      right: 0;
+      top: 100px;
+    }
+    &__subtitle{
+      width: 350px;
+    }
+  }
+  input[type=range] {
+    width: 426px;
+  }
+  input[type=text] {
+    width: 426px;
+    height: 72px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .inputs__numbers{
+    width: 426px;
+  }
+  .vs__slider{
+    margin: 50px 0 50px;
+  }
+  .column{
+    &__title {
+      width: 460px;
+      height: 156px;
+      font-size: 24px;
+      line-height: 125%;
+      &-red{
+        &:before{
+          width: 84px;
+          height: 84px;
+        }
+      }
+      &-green {
+        &:before {
+          width: 84px;
+          height: 84px;
+        }
+      }
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 140%;
+      width: 400px;
+      &-red{
+        border-left: solid #EB5757 4px;
+      }
+      &-green{
+        border-left: solid #87B645 4px;
+      }
+      &:nth-child(2n+1){
+        width: 440px;
+      }
+    }
+  }
+  .selection{
+    width: 426px;
+    &__items{
+      width: 426px;
+    }
+  }
+  .connect {
+    margin-bottom: 100px;
+    &__subtitle {
+      padding: 20px 250px;
+    }
+  }
+  .faq{
+    padding: 0 50px;
+    &__items {
+      width: 450px;
+      margin-left: 60px;
+    }
+    &__question {
+      height: 104px;
+      font-size: 20px;
+      line-height: 120%;
+    }
+    &__answer{
+      margin:10px 30px;
+      font-size: 16px;
+      line-height: 140%;
+    }
+    &__txt{
+      width: 25%;
+    }
+    &__title{
+      font-size: 23px;
+      line-height: 130%;
+    }
+    &__subtitle{
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
+@media (max-width: 1365px) {
+  .calc__item {
+    & + & {
+      margin-top: 40px;
+    }
+  }
+  .calc__button {
+    margin: 70px;
+  }
+
+}
+@media (min-width: 1366px) {
+  .calc{
+  margin-top: 50px;
+  margin-left: -150px;
+    &__column{
+      display: flex;
+    }
+    &__item {
+      margin-left: 100px;
+    }
+    &__button{
+      margin-left: 80px;
+      margin-top: 45px;
+    }
+  }
+  .faq{
+    padding: 0 120px;
+  }
+}
+@media (max-width: 1919px) {
+
+}
+@media (min-width: 1920px) {
+  .header{
+    margin-top: 70px;
+    padding: 0 70px;
+  }
+  .menu__link{
+    margin: 0 50px;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .menu__button{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    button{
+    width: 232px;
+    height: 64px;
+    }
+  }
+  .title{
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 2px;
+  }
+  .risk{
+    margin-top: 130px;
+  }
+  .risk__title{
+    padding: 50px 28% 0;
+    font-size: 60px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .description{
+    position: relative;
+    &__text{
+      position: absolute;
+      right: 5%;
+      top: 25%;
+    }
+    &__title{
+      font-size: 48px;
+      line-height: 100%;
+      margin-bottom: 40px;
+    }
+    &__subtitle{
+      font-size: 30px;
+      line-height: 140%;
+      width: 560px;
+    }
+    &__img img{
+      width: 75%;
+      margin-top: 40px;
+      margin-left: 150px;
+    }
+  }
+  .advantage{
+    width: 416px;
+    height: 552px;
+    margin: 130px 40px;
+    &:nth-child(2){
+      margin: 110px 40px;
+    }
+    &__title{
+      padding: 0 12%;
+    }
+    &__subtitle {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+  .vs__slider{
+    margin: 50px 0 150px;
+  }
+  .column{
+    &__title {
+      width: 688px;
+      height: 208px;
+      font-size: 36px;
+      line-height: 130%;
+      &-red{
+        &:before{
+          width: 128px;
+          height: 128px;
+        }
+      }
+      &-green {
+        &:before {
+          width: 128px;
+          height: 128px;
+        }
+      }
+    }
+    &__text{
+      font-size: 18px;
+      line-height: 140%;
+      width: 624px;
+      &-red{
+        border-left: solid #EB5757 8px;
+      }
+      &-green{
+        border-left: solid #87B645 8px;
+      }
+      &:nth-child(2n+1){
+        width: 640px;
+      }
+    }
+  }
+  .input{
+    margin-top: 50px;
+  }
+  .inputs{
+    margin: 0 50px;
+  }
+  .calc{
+    margin-top: 50px;
+    margin-left: -150px;
+    &__item{
+        margin-left: 150px;
+    }
+    &__title{
+      font-size: 18px;
+      line-height: 140%;
+    }
+    &__currency{
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 100%;
+    }
+    &__cost{
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 100%;
+    }
+    &__pay{
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 100%;
+    }
+    &__cryptocurrency{
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 100%;
+    }
+    &__button{
+      margin-left: 110px;
+      margin-top: 60px;
+      button{
+        width: 272px;
+        height: 72px;
+      }
+    }
+  }
+  .garanty{
+    padding-top: 150px;
+    &__items{
+      margin-top: 100px;
+    }
+    &__item-1{
+      width: 432px;
+      height: 296px;
+      margin: 0 30px;
+    }
+    &__item-2{
+      width: 432px;
+      height: 296px;
+      margin: 0 30px;
+    }
+    &__item-3{
+      width: 432px;
+      height: 296px;
+      margin: 0 30px;
+    }
+  }
+  .faq{
+    &__items {
+      margin-left: 250px;
+      width: 776px;
+    }
+    &__question {
+      height: 152px;
+      font-size: 30px;
+      line-height: 120%;
+    }
+    &__answer{
+      margin:30px 50px;
+      font-size: 18px;
+      line-height: 140%;
+    }
+    &__txt{
+      width: 25%;
+    }
+    &__title{
+      font-size: 36px;
+      line-height: 130%;
+    }
+    &__subtitle{
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+  .connect{
+    padding: 0 0 200px;
+    &__subtitle{
+      font-size: 18px;
+      line-height: 140%;
+      padding: 25px 700px 100px;
+    }
+  }
+  .footer{
+    &__links{
+
+    }
+    &__tel{
+
+    }
+    &__end{
+
+    }
+  }
+
+
+
+
+
+
+
+
+}
