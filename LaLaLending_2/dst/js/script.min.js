@@ -17,7 +17,14 @@ $(function() {
         $(".calc__subtitle-number").text(this.value)
     });
 
-
+    $('a').on("click", function (e) {
+        e.preventDefault();
+        console.log($(this));
+        let h = $($(this).attr('href'));
+        $('html, body').animate({
+            scrollTop: h.offset().top -80
+        }, 500);
+    } );
 
 
     $(".selection__items__item-buttons-all").on('click', function () {
