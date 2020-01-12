@@ -20,8 +20,7 @@
   font-style: normal; }
 
 html {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
+  box-sizing: border-box; }
 
 *,
 *::before,
@@ -624,8 +623,7 @@ input[type="checkbox"]:checked + label::after {
 .faq {
   margin-top: 140px;
   padding: 0 16px;
-  background: url("../img/faq__bg.svg") no-repeat right;
-  background-size: contain; }
+  background: url("../img/faq__bg.svg") no-repeat top right; }
   .faq__items {
     margin-top: 60px;
     width: 328px; }
@@ -746,7 +744,9 @@ input[type="checkbox"]:checked + label::after {
   .menu {
     display: flex; }
   .menu__links {
-    display: none; } }
+    display: none; }
+  .faq {
+    background-size: contain; } }
 
 @media (min-width: 768px) {
   .menu {

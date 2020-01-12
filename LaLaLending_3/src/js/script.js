@@ -3,6 +3,7 @@ $(function() {
     $(".selection__items").hide();
     $(".selection").html($(".selection__item").eq(0).clone()).append("<img src='./img/arrow_icon.svg 'alt='>' class='arrow'>");
     calc();
+    $(".faq__item").children(".faq__answer").not($(".faq__item").eq(0).children(".faq__answer")).slideUp(500);
 
     $('.th__input, .day__input').keydown(function(e){
         e.preventDefault()
@@ -16,11 +17,18 @@ $(function() {
         $(".menu__popup").hide();
     });
 
-
+    $('a').on("click", function (e) {
+        e.preventDefault();
+        console.log($(this));
+        let h = $($(this).attr('href'));
+        $('html, body').animate({
+            scrollTop: h.offset().top
+        }, 500);
+    } );
 
 
     $(".th").on("change, input", function () {
-        $(".th__input").val(this.value)
+        $(".th__input").val(this.value);
         calc();
     });
     $(".day").on("change, input", function () {
@@ -51,7 +59,9 @@ $(function() {
     }
 
     $(".faq__item").on("click", function () {
-        $(this).children(".faq__answer").toggleClass("hidden");
+        $(".faq__item").children(".faq__answer").not($(this).children(".faq__answer")).slideUp(500);
+        $(this).children(".faq__answer").slideToggle(500);
+        $(".faq__item").children(".faq__question").not($(this).children(".faq__question")).removeClass("faq__question-open");
         $(this).children(".faq__question").toggleClass("faq__question-open");
     });
 

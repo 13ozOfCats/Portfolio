@@ -48,7 +48,6 @@ gulp.task('img', function(){
 gulp.task('js', function(){
     return gulp.src('./src/js/*.js')
         .pipe(concat('script.min.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('./dst/js/'))
         .pipe(browserSync.reload({stream: true}))
 });
